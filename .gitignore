@@ -1,0 +1,12 @@
+node_modules
+dist
+.DS_Store
+*.local
+.impeccable/config.local.json
+tsconfig.tsbuildinfo
+
+# Impeccable working material (screenshots, decision-page state, downloaded reference images)
+.impeccable/review/
+.impeccable/questions/
+.impeccable/mocks/
+.impeccable/reference/

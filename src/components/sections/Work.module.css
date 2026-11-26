@@ -1,0 +1,145 @@
+.section {
+  padding-bottom: var(--section);
+}
+
+.grid {
+  display: grid;
+  gap: 1rem;
+  perspective: 1400px;
+}
+.cell {
+  display: grid;
+}
+
+.card {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: border-color var(--dur) var(--ease-out), box-shadow var(--dur) var(--ease-out);
+}
+.card:hover,
+.card:focus-within {
+  border-color: var(--accent);
+  box-shadow: var(--lift);
+}
+
+/* Preview plate: the project's architecture on a darker inset */
+.preview {
+  padding: 1.25rem 1.5rem 0.75rem;
+  border-bottom: 1px solid var(--line);
+  background: rgb(11 13 26 / 0.6);
+}
+.diagram {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 15rem;
+}
+.card:hover .diagram path {
+  animation-duration: 0.9s;
+}
+
+.body {
+  display: grid;
+  align-content: start;
+  gap: 0.6rem;
+  padding: 1.5rem 1.5rem 0.5rem;
+}
+.kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  color: var(--text-3);
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.kind::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--marker);
+  transition: background-color var(--dur-fast) var(--ease-out);
+}
+.card:hover .kind {
+  color: var(--accent-text);
+}
+.card:hover .kind::before {
+  background: var(--accent);
+}
+.title {
+  font-size: 1rem;
+  font-weight: 550;
+  letter-spacing: 0.16em;
+  line-height: 1.45;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.summary {
+  font-size: 0.98rem;
+  line-height: 1.65;
+  color: var(--text-2);
+  max-width: 60ch;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.6rem;
+  padding: 1.25rem 1.5rem 1.5rem;
+}
+.action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.55rem;
+  min-height: 3rem;
+  padding: 0 1rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.action:hover {
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+.primary {
+  background: rgb(106 108 246 / 0.26);
+  border-color: var(--lilac);
+}
+.primary:hover {
+  background: rgb(106 108 246 / 0.42);
+  border-color: var(--accent);
+  color: var(--text);
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1200px) {
+  .preview {
+    padding: 1.5rem 2rem 1rem;
+  }
+  .body {
+    padding: 1.75rem 2rem 0.5rem;
+  }
+  .actions {
+    padding: 1.25rem 2rem 2rem;
+  }
+}

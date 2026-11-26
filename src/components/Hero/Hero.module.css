@@ -1,0 +1,272 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+/* Phone: photo, name, tagline, actions, then the status readout */
+.inner {
+  display: grid;
+  grid-template-areas:
+    'photo'
+    'name'
+    'tag'
+    'actions'
+    'status';
+  gap: 1.75rem;
+  align-items: start;
+}
+.portrait {
+  grid-area: photo;
+  width: 6.5rem;
+  aspect-ratio: 1;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  overflow: hidden;
+  background: var(--ink);
+}
+.portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+.status {
+  grid-area: status;
+}
+
+/* Wrappers only take shape on wide screens; below that their children sit in the grid directly */
+.lead,
+.side {
+  display: contents;
+}
+
+.name {
+  grid-area: name;
+  font-size: var(--fs-hero);
+  display: grid;
+  line-height: 0.88;
+}
+.mask {
+  display: block;
+  overflow: hidden;
+  padding-bottom: 0.03em;
+}
+/*
+ * The name is the source of the molten line: one gradient running down both lines,
+ * lilac at the top of the first word into ember at the foot of the second.
+ * Each line shows its half of a gradient sized to two lines.
+ */
+.line {
+  display: block;
+  color: transparent;
+  /* Muted heat: lilac into a soft ember, never neon */
+  background-image: linear-gradient(180deg, #c2c4f2 0%, #9a9be6 30%, #ac8ad0 56%, #d98f78 82%, #e3a58f 100%);
+  background-size: 100% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.mask:nth-child(1) .line {
+  background-position: 0 0;
+}
+.mask:nth-child(2) .line {
+  background-position: 0 100%;
+}
+
+.tagline {
+  grid-area: tag;
+  max-width: 62ch;
+  /* Phones: plain sentence case reads calmer than tracked capitals */
+  font-size: 1.05rem;
+  font-weight: 400;
+  line-height: 1.65;
+  color: var(--text-2);
+}
+@media (min-width: 760px) {
+  .tagline {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.22em;
+    line-height: 2.05;
+    text-transform: uppercase;
+  }
+}
+
+.actions {
+  grid-area: actions;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+}
+.primary,
+.secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.25rem;
+  min-height: 3.5rem;
+  padding: 0 1.4rem 0 1.6rem;
+  border-radius: var(--radius);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition:
+    background-color var(--dur-fast) var(--ease-out),
+    border-color var(--dur-fast) var(--ease-out),
+    color var(--dur-fast) var(--ease-out),
+    transform var(--dur-fast) var(--ease-out);
+}
+.primary {
+  background: rgb(106 108 246 / 0.26);
+  border: 1px solid var(--lilac);
+  color: var(--text);
+}
+.primary:hover {
+  background: rgb(106 108 246 / 0.42);
+  border-color: var(--ember);
+}
+.secondary {
+  border: 1px solid var(--ember);
+  color: var(--ember);
+}
+.secondary:hover {
+  background: var(--ember);
+  color: var(--void);
+}
+.primary:active,
+.secondary:active {
+  transform: translateY(1px);
+}
+
+.status {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  max-width: 40rem;
+}
+.pulse {
+  flex: none;
+  width: 7px;
+  height: 7px;
+  margin-top: 0.3rem;
+  border-radius: 50%;
+  background: var(--lilac);
+  animation: pulse 2.6s var(--ease-out) infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgb(106 108 246 / 0.55); }
+  70% { box-shadow: 0 0 0 9px rgb(106 108 246 / 0); }
+  100% { box-shadow: 0 0 0 0 rgb(106 108 246 / 0); }
+}
+.now {
+  display: grid;
+  gap: 0.35rem;
+}
+.statusMain {
+  margin-top: 0.15rem;
+  font-size: 0.95rem;
+  font-weight: 550;
+  color: var(--text);
+  line-height: 1.4;
+}
+.statusSub {
+  display: block;
+  margin-top: 0.1rem;
+  font-weight: 400;
+  font-size: var(--fs-small);
+  color: var(--text-2);
+}
+
+@media (max-width: 560px) {
+  .actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .primary,
+  .secondary {
+    gap: 0.75rem;
+    padding: 0 1rem;
+    letter-spacing: 0.18em;
+  }
+}
+
+/* Desktop: name on the left, the portrait as a framed plate on the right, readout under it */
+/* Tablet and small desktop: two columns. Name, tagline and actions left; photo and Currently right */
+@media (min-width: 760px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) minmax(14rem, 18rem);
+    grid-template-areas:
+      'name    photo'
+      'tag     photo'
+      'actions status';
+    column-gap: clamp(2rem, 5vw, 4rem);
+    row-gap: 1.5rem;
+    padding-right: clamp(1.5rem, 5vw, 5.5rem);
+  }
+  .name {
+    align-self: end;
+  }
+  .portrait {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 4 / 5;
+    padding: 0.6rem;
+    border-radius: 6px;
+    align-self: center;
+  }
+  /* Shown as photographed: no grading, just the ink matte frame */
+  .portrait img {
+    border-radius: 3px;
+  }
+  .status {
+    align-self: start;
+  }
+}
+
+/* Large desktop: one row. Name + actions, the photo, and tagline + Currently share one centre line */
+@media (min-width: 1200px) {
+  .inner {
+    grid-template-columns: minmax(0, 1fr) minmax(15rem, 19rem) minmax(13rem, 17rem);
+    grid-template-areas: 'lead photo side';
+    align-items: center;
+    column-gap: clamp(2rem, 4.5vw, 4.5rem);
+    padding-left: clamp(0rem, 3vw, 4rem);
+    /* clears the scroll rail on the right edge */
+    padding-right: clamp(1.5rem, 5vw, 5.5rem);
+  }
+  .lead {
+    grid-area: lead;
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+  }
+  .lead .name {
+    align-self: stretch;
+  }
+  .side {
+    grid-area: side;
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+  }
+  .portrait {
+    align-self: center;
+  }
+  .tagline {
+    padding-top: 1.1rem;
+    border-top: 1px solid var(--line-strong);
+    line-height: 2.1;
+    /* it crosses the ribbons here, so it takes the primary text colour */
+    color: var(--text);
+  }
+  /* The Currently readout sits under the tagline, beside the photo */
+  .status {
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--line);
+  }
+}

@@ -1,0 +1,133 @@
+.sheet {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  /* Solid: page text must never ghost through behind the sheet */
+  background:
+    radial-gradient(70% 60% at 85% 20%, rgb(106 108 246 / 0.12), transparent 70%),
+    var(--void);
+}
+
+.bar {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-block: 1.1rem;
+  background: var(--void);
+  border-bottom: 1px solid var(--line);
+}
+.controls {
+  display: flex;
+  gap: 0.5rem;
+}
+.ctrl {
+  display: inline-grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 0.45rem;
+  min-width: 2.75rem;
+  height: 2.75rem;
+  padding: 0 0.8rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.ctrl:hover {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.close {
+  border-color: var(--mist);
+}
+.close:hover {
+  background: var(--ember);
+  border-color: var(--ember);
+  color: var(--void);
+}
+
+.body {
+  display: grid;
+  gap: clamp(2rem, 5vw, 5rem);
+  padding-top: clamp(2rem, 6vh, 4.5rem);
+  padding-bottom: 6rem;
+}
+
+.lead {
+  display: grid;
+  gap: 2rem;
+  align-content: start;
+}
+.title {
+  font-size: clamp(2.75rem, 5.6vw, 5.25rem);
+}
+.meta {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.content {
+  display: grid;
+  align-content: start;
+  gap: 1.4rem;
+  max-width: 64ch;
+}
+.lede {
+  font-size: clamp(1.08rem, 1.4vw, 1.25rem);
+  line-height: 1.7;
+  color: var(--text);
+}
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.75rem;
+}
+.action {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3.25rem;
+  padding: 0 1.25rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.action:hover {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: var(--void);
+}
+.cert {
+  padding: 0.6rem;
+  background: #f4f5fb;
+  border-radius: var(--radius);
+  box-shadow: var(--lift);
+  max-width: 620px;
+}
+
+@media (min-width: 980px) {
+  .body {
+    grid-template-columns: minmax(0, 6fr) minmax(0, 5fr);
+  }
+  .lead {
+    position: sticky;
+    top: 7rem;
+    align-self: start;
+  }
+}

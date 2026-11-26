@@ -1,0 +1,6 @@
+.num {
+  color: var(--lilac-text);
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}

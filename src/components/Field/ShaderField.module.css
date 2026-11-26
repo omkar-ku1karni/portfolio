@@ -1,0 +1,17 @@
+.field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  display: block;
+  background: var(--void);
+  pointer-events: none;
+}
+/* No WebGL: a still rendition of the same field in CSS */
+.field[data-fallback] {
+  background:
+    radial-gradient(60% 50% at 78% 48%, rgb(106 108 246 / 0.35), transparent 70%),
+    radial-gradient(40% 35% at 92% 72%, rgb(255 106 61 / 0.28), transparent 70%),
+    var(--void);
+}

@@ -1,0 +1,57 @@
+/* Sits behind the page's content but over the shader field (both are z-index -1; DOM order wins) */
+.snake {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.line,
+.glow {
+  fill: none;
+  stroke: url(#snake-heat);
+  stroke-linecap: square;
+  stroke-linejoin: miter;
+}
+.line {
+  stroke-width: 1.6;
+}
+.glow {
+  stroke-width: 6;
+  opacity: 0.1;
+}
+
+/* Stops: dark until the line reaches them, then they ignite and stay lit */
+.node {
+  fill: var(--void);
+  stroke: var(--line-strong);
+  stroke-width: 1.2;
+  transition: fill 400ms var(--ease-out), stroke 400ms var(--ease-out), r 400ms var(--ease-out);
+}
+.node[data-lit] {
+  fill: #d47e64;
+  stroke: #e9bfa6;
+  r: 4.5;
+}
+
+/* The molten head */
+.head {
+  transition: opacity 300ms var(--ease-out);
+}
+.headHalo {
+  fill: rgb(212 126 100 / 0.2);
+}
+.headCore {
+  fill: #f1d6c6;
+  stroke: #d47e64;
+  stroke-width: 1.5;
+}
+
+/* Phones: the gutter is too narrow for the line to read as anything but clutter */
+@media (max-width: 719px) {
+  .snake {
+    display: none;
+  }
+}

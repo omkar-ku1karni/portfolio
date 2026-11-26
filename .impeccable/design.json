@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-25T19:29:06+00:00",
+  "title": "Design System: Omkar Kulkarni Portfolio",
+  "extensions": {
+    "colorMeta": {
+      "void": {
+        "role": "neutral",
+        "displayName": "Void",
+        "canonical": "oklch(16.4% 0.028 276)",
+        "tonalRamp": [
+          "oklch(15% 0.027 276)",
+          "oklch(26% 0.024 276)",
+          "oklch(38% 0.020 276)",
+          "oklch(49% 0.017 276)",
+          "oklch(61% 0.013 276)",
+          "oklch(72% 0.009 276)",
+          "oklch(84% 0.007 276)",
+          "oklch(95% 0.007 276)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "oklch(20.9% 0.042 276)",
+        "tonalRamp": [
+          "oklch(15% 0.039 276)",
+          "oklch(26% 0.039 276)",
+          "oklch(38% 0.033 276)",
+          "oklch(49% 0.028 276)",
+          "oklch(61% 0.022 276)",
+          "oklch(72% 0.016 276)",
+          "oklch(84% 0.010 276)",
+          "oklch(95% 0.010 276)"
+        ]
+      },
+      "night": {
+        "role": "neutral",
+        "displayName": "Night",
+        "canonical": "oklch(24.4% 0.055 277)",
+        "tonalRamp": [
+          "oklch(15% 0.049 277)",
+          "oklch(26% 0.054 277)",
+          "oklch(38% 0.046 277)",
+          "oklch(49% 0.039 277)",
+          "oklch(61% 0.031 277)",
+          "oklch(72% 0.024 277)",
+          "oklch(84% 0.016 277)",
+          "oklch(95% 0.014 277)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Starlight",
+        "canonical": "oklch(93.2% 0.021 274)",
+        "tonalRamp": [
+          "oklch(15% 0.005 274)",
+          "oklch(26% 0.005 274)",
+          "oklch(38% 0.007 274)",
+          "oklch(49% 0.010 274)",
+          "oklch(61% 0.013 274)",
+          "oklch(72% 0.015 274)",
+          "oklch(84% 0.018 274)",
+          "oklch(95% 0.020 274)"
+        ]
+      },
+      "text-2": {
+        "role": "neutral",
+        "displayName": "Haze",
+        "canonical": "oklch(76.2% 0.046 276)",
+        "tonalRamp": [
+          "oklch(15% 0.012 276)",
+          "oklch(26% 0.019 276)",
+          "oklch(38% 0.025 276)",
+          "oklch(49% 0.031 276)",
+          "oklch(61% 0.038 276)",
+          "oklch(72% 0.044 276)",
+          "oklch(84% 0.042 276)",
+          "oklch(95% 0.036 276)"
+        ]
+      },
+      "text-3": {
+        "role": "neutral",
+        "displayName": "Dusk",
+        "canonical": "oklch(67.1% 0.055 276)",
+        "tonalRamp": [
+          "oklch(15% 0.021 276)",
+          "oklch(26% 0.028 276)",
+          "oklch(38% 0.036 276)",
+          "oklch(49% 0.044 276)",
+          "oklch(61% 0.051 276)",
+          "oklch(72% 0.052 276)",
+          "oklch(84% 0.044 276)",
+          "oklch(95% 0.037 276)"
+        ]
+      },
+      "mist": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "oklch(86.5% 0.066 267)",
+        "tonalRamp": [
+          "oklch(15% 0.017 267)",
+          "oklch(26% 0.018 267)",
+          "oklch(38% 0.028 267)",
+          "oklch(49% 0.037 267)",
+          "oklch(61% 0.046 267)",
+          "oklch(72% 0.055 267)",
+          "oklch(84% 0.064 267)",
+          "oklch(95% 0.059 267)"
+        ],
+        "note": "Family marker at rest for AI engineering (--marker)."
+      },
+      "display-ink": {
+        "role": "neutral",
+        "displayName": "Display Ink",
+        "canonical": "oklch(87.5% 0.048 280)",
+        "tonalRamp": [
+          "oklch(15% 0.012 280)",
+          "oklch(26% 0.013 280)",
+          "oklch(38% 0.020 280)",
+          "oklch(49% 0.026 280)",
+          "oklch(61% 0.033 280)",
+          "oklch(72% 0.040 280)",
+          "oklch(84% 0.046 280)",
+          "oklch(95% 0.044 280)"
+        ]
+      },
+      "lilac": {
+        "role": "primary",
+        "displayName": "Studio Lilac",
+        "canonical": "oklch(60.4% 0.202 278)",
+        "tonalRamp": [
+          "oklch(15% 0.092 278)",
+          "oklch(26% 0.119 278)",
+          "oklch(38% 0.147 278)",
+          "oklch(49% 0.175 278)",
+          "oklch(61% 0.201 278)",
+          "oklch(72% 0.173 278)",
+          "oklch(84% 0.146 278)",
+          "oklch(95% 0.118 278)"
+        ],
+        "note": "Family marker at rest and family accent for analytics."
+      },
+      "lilac-text": {
+        "role": "primary",
+        "displayName": "Lilac Readout",
+        "canonical": "oklch(73.2% 0.142 281)",
+        "tonalRamp": [
+          "oklch(15% 0.043 281)",
+          "oklch(26% 0.062 281)",
+          "oklch(38% 0.082 281)",
+          "oklch(49% 0.101 281)",
+          "oklch(61% 0.121 281)",
+          "oklch(72% 0.140 281)",
+          "oklch(84% 0.124 281)",
+          "oklch(95% 0.105 281)"
+        ]
+      },
+      "ember": {
+        "role": "secondary",
+        "displayName": "Ember Signal",
+        "canonical": "oklch(70.4% 0.192 37)",
+        "tonalRamp": [
+          "oklch(15% 0.064 37)",
+          "oklch(26% 0.090 37)",
+          "oklch(38% 0.117 37)",
+          "oklch(49% 0.143 37)",
+          "oklch(61% 0.169 37)",
+          "oklch(72% 0.188 37)",
+          "oklch(84% 0.161 37)",
+          "oklch(95% 0.135 37)"
+        ],
+        "note": "Family accent (hover/active) for AI engineering; resting only on the Resume outline."
+      },
+      "certificate-paper": {
+        "role": "neutral",
+        "displayName": "Certificate Paper",
+        "canonical": "oklch(97.1% 0.008 279)",
+        "tonalRamp": [
+          "oklch(15% 0.002 279)",
+          "oklch(26% 0.002 279)",
+          "oklch(38% 0.002 279)",
+          "oklch(49% 0.003 279)",
+          "oklch(61% 0.005 279)",
+          "oklch(72% 0.006 279)",
+          "oklch(84% 0.007 279)",
+          "oklch(95% 0.008 279)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Hairline",
+        "canonical": "rgb(191 210 255 / 0.13)"
+      },
+      "line-strong": {
+        "role": "neutral",
+        "displayName": "Hairline Strong",
+        "canonical": "rgb(191 210 255 / 0.28)"
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Panel Ink",
+        "canonical": "rgb(19 22 43 / 0.86)"
+      },
+      "lilac-wash": {
+        "role": "primary",
+        "displayName": "Lilac Wash",
+        "canonical": "rgb(106 108 246 / 0.26)"
+      },
+      "lilac-wash-hover": {
+        "role": "primary",
+        "displayName": "Lilac Wash (hover)",
+        "canonical": "rgb(106 108 246 / 0.42)"
+      },
+      "selection-text": {
+        "role": "neutral",
+        "displayName": "Selection Text",
+        "canonical": "#ffffff",
+        "purpose": "Selected text on lilac only."
+      },
+      "preview-plate": {
+        "role": "neutral",
+        "displayName": "Preview Plate",
+        "canonical": "rgb(11 13 26 / 0.6)"
+      },
+      "diagram-node": {
+        "role": "neutral",
+        "displayName": "Diagram Node Ink",
+        "canonical": "rgb(19 22 43 / 0.92)"
+      },
+      "diagram-good": {
+        "role": "semantic",
+        "displayName": "Outcome Mint",
+        "canonical": "oklch(79.4% 0.131 161)",
+        "purpose": "Approved or success outcome in diagrams only; never a UI accent.",
+        "tonalRamp": [
+          "oklch(15% 0.039 161)",
+          "oklch(26% 0.059 161)",
+          "oklch(38% 0.078 161)",
+          "oklch(49% 0.098 161)",
+          "oklch(61% 0.117 161)",
+          "oklch(72% 0.131 161)",
+          "oklch(84% 0.123 161)",
+          "oklch(95% 0.065 161)"
+        ]
+      },
+      "diagram-bad-stroke": {
+        "role": "semantic",
+        "displayName": "Outcome Red (stroke)",
+        "canonical": "rgb(255 138 138 / 0.7)",
+        "purpose": "Failure outcome node stroke in diagrams only."
+      },
+      "diagram-bad-text": {
+        "role": "semantic",
+        "displayName": "Outcome Red (text)",
+        "canonical": "#ff9d9d",
+        "purpose": "Failure outcome node title in diagrams only."
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero name only; condensed light uppercase, one word per masked line."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section headings, rising word by word; same recipe scales to the contact heading and sheet title."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Role titles and institutions, sticky beside their entries on desktop."
+      },
+      "title-sans": {
+        "displayName": "Title Sans",
+        "purpose": "Publication title inside its panel; normal width, sentence case."
+      },
+      "card-title": {
+        "displayName": "Card Title",
+        "purpose": "Project names on cards, 1rem tracked 0.16em uppercase."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Sentence-case reading text, 64 to 68ch, tabular numerals."
+      },
+      "body-small": {
+        "displayName": "Body Small",
+        "purpose": "Credit lines, link values, status sub-lines."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Tracked uppercase second voice: asides, sheet subheads, nav, footer."
+      },
+      "button-label": {
+        "displayName": "Button Label",
+        "purpose": "Labels inside rectangular actions."
+      },
+      "pill-label": {
+        "displayName": "Pill Label",
+        "purpose": "Filter pills and the family label."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Header name, tracked 0.34em."
+      },
+      "numeral-inline": {
+        "displayName": "Inline Numeral",
+        "purpose": "Every figure in running text; lilac-text, never enlarged."
+      },
+      "headline-contact": {
+        "displayName": "Headline (Contact)",
+        "purpose": "Contact heading, larger headline recipe."
+      },
+      "headline-sheet": {
+        "displayName": "Headline (Sheet)",
+        "purpose": "Certificate sheet title."
+      },
+      "title-institution": {
+        "displayName": "Title (Institution)",
+        "purpose": "Education institution names."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Sheet lede line when a certificate has no image."
+      },
+      "card-summary": {
+        "displayName": "Card Summary",
+        "purpose": "One or two sentence project summary."
+      },
+      "status-line": {
+        "displayName": "Status Line",
+        "purpose": "Hero Currently readout entries."
+      },
+      "tag": {
+        "displayName": "Tag",
+        "purpose": "In-progress dashed pill text."
+      },
+      "rail-caption": {
+        "displayName": "Rail Caption",
+        "purpose": "Vertical scroll rail captions."
+      },
+      "diagram-title": {
+        "displayName": "Diagram Title",
+        "purpose": "Node titles in SVG user units (viewBox 400x192), uppercase."
+      },
+      "diagram-sub": {
+        "displayName": "Diagram Sub",
+        "purpose": "Node sub-lines in dusk, SVG user units."
+      },
+      "diagram-caption": {
+        "displayName": "Diagram Caption",
+        "purpose": "Diagram captions, uppercase tracked 0.18em, SVG user units."
+      }
+    },
+    "shadows": [
+      {
+        "name": "lift",
+        "value": "0 24px 48px -24px rgb(0 0 0 / 0.7), 0 2px 6px rgb(0 0 0 / 0.3)",
+        "purpose": "Project card on hover or focus-within; certificate image in the credential sheet. Never at rest, never tinted."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The one easing for CSS transitions and motion entrances."
+      },
+      {
+        "name": "dur-fast",
+        "value": "200ms",
+        "purpose": "Colour, border and background changes on hover."
+      },
+      {
+        "name": "dur",
+        "value": "480ms",
+        "purpose": "Opacity, padding, shadow, illumination dimming, header fill."
+      },
+      {
+        "name": "heading-rise",
+        "value": "y 110% to 0, 1s, ease-out, 0.07s word stagger, once at -10% viewport margin",
+        "purpose": "Section and contact headlines rising out of word masks."
+      },
+      {
+        "name": "hero-rise",
+        "value": "y 105% to 0, 1.2s, ease-out, delay 0.15s + 0.12s per line",
+        "purpose": "Hero name lines."
+      },
+      {
+        "name": "fade-up",
+        "value": "opacity 0 to 1, y 12px to 0, 0.9s, ease-out",
+        "purpose": "Hero tagline, actions and status readout, staggered 0.55 to 0.9s."
+      },
+      {
+        "name": "portrait-develop",
+        "value": "clip-path inset(100% 0 0 0) to inset(0), opacity 0.4 to 1, 1.4s, delay 0.35s",
+        "purpose": "The portrait developing in like a print."
+      },
+      {
+        "name": "card-enter",
+        "value": "opacity 0 to 1, y 40px to 0, 1s, ease-out, delay 0.08s on the second column",
+        "purpose": "Project cards entering on scroll."
+      },
+      {
+        "name": "credential-enter",
+        "value": "rotateY -60deg to 0, opacity 0 to 1, 0.9s, delay 0.07s per tile",
+        "purpose": "Credential tiles swinging in from their left edge."
+      },
+      {
+        "name": "credential-flip",
+        "value": "rotateY 180deg, 800ms, ease-out",
+        "purpose": "Tile flips to its certificate on hover (hover-capable pointers) or focus."
+      },
+      {
+        "name": "card-tilt",
+        "value": "spring stiffness 180, damping 22; rotateX ±4deg, rotateY ±5deg from pointer",
+        "purpose": "Project card tilt, mouse only."
+      },
+      {
+        "name": "diagram-flow",
+        "value": "edge stroke-dasharray 3 4, dashoffset to -14, 2.4s linear infinite; 0.9s while the card is hovered",
+        "purpose": "Project preview diagram edges; off under reduced motion and still mode."
+      },
+      {
+        "name": "sheet-reveal",
+        "value": "clip-path circle(0 at origin) to circle(r at origin), 0.8s, ease-out; reverse on close",
+        "purpose": "Certificate sheet dissolving open from the launching tile."
+      },
+      {
+        "name": "sheet-page",
+        "value": "in: opacity 0, x ±40px to 0, 0.5s, delay 0.05s; out: x ∓28px, 0.18s",
+        "purpose": "Arrow-key paging between certificates in the sheet."
+      },
+      {
+        "name": "nav-dot",
+        "value": "spring stiffness 420, damping 36 (shared layout)",
+        "purpose": "Ember current-section dot sliding between nav links."
+      },
+      {
+        "name": "progress-spring",
+        "value": "rail: stiffness 140, damping 30; experience fill: stiffness 120, damping 30",
+        "purpose": "Scroll rail knob and the lilac-to-ember experience rail fill."
+      },
+      {
+        "name": "status-pulse",
+        "value": "2.6s ease-out infinite, 0 to 9px lilac ring fading to 0",
+        "purpose": "Hero Currently dot only."
+      },
+      {
+        "name": "inertial-scroll",
+        "value": "Lenis lerp 0.09, anchor offset -72px; stopped while the sheet is open",
+        "purpose": "Page scroll; skipped under reduced motion."
+      },
+      {
+        "name": "shader-field",
+        "value": "half resolution; time x0.12; scroll over 3 viewports (lerp 0.08); cursor lerp 0.06, bend 0.25; card-hover accent lean lerp 0.05, 70% mix, +50% strength; grain ±1.5%",
+        "purpose": "The living ground; frozen at one settled frame under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "transitions and animations 1ms; entrances dropped; field frozen; no Lenis; sheet fades 0.15s",
+        "purpose": "Calm path, also forced by ?still and automated browsers."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "phone",
+        "value": "560px"
+      },
+      {
+        "name": "two-up-skills",
+        "value": "720px"
+      },
+      {
+        "name": "two-up-projects",
+        "value": "900px"
+      },
+      {
+        "name": "split",
+        "value": "980px"
+      },
+      {
+        "name": "hero-three-col",
+        "value": "1000px"
+      },
+      {
+        "name": "nav",
+        "value": "1100px"
+      },
+      {
+        "name": "wide-cards",
+        "value": "1200px"
+      },
+      {
+        "name": "rail",
+        "value": "1280px"
+      }
+    ],
+    "shaderField": {
+      "ground": "#0b0d1a",
+      "ribbons": 3,
+      "hueAlong": [
+        "#6a6cf6",
+        "#ff6a3d"
+      ],
+      "structure": "Gaussian band envelope, fine strands (sin, power 5), bright core, sparse grain",
+      "leftMask": "smoothstep(0.38, 0.72) of width: left stays near-void behind type",
+      "scrollCalm": "up to 60% quieter further down the page",
+      "focusLean": "Toward the hovered or focused project card's family accent: analytics = lilac, ai = ember (resting markers: analytics = lilac, ai = mist). The certificate sheet does not lean the field.",
+      "fallback": "Static CSS radial lilac (35%) and ember (28%) washes on void",
+      "echo": "FlowArt fallback on cards without a preview diagram: 26 seeded SVG strands at 0.8px in the family accent"
+    },
+    "photography": {
+      "heroGrid": "Phones: stacked (round portrait, name, sentence-case tagline, paired actions, Currently). ≥760px: two columns, name/tagline/actions left, portrait and Currently right. ≥1200px: one row of three blocks on one centre line: name+actions | portrait plate | tagline+Currently.",
+      "treatment": "Shown as taken: no filter, no overlay (user, 2026-11-26). 4:5 plate in a 0.6rem ink matte from 760px; 6.5rem circle on phones."
+    },
+    "projectPreview": {
+      "viewBox": "400 192",
+      "kinds": [
+        "pipeline",
+        "funnel",
+        "fusion",
+        "agents"
+      ],
+      "fallback": "FlowArt",
+      "plate": "rgb(11 13 26 / 0.6) with a 1px line hairline under it; no grid background",
+      "node": {
+        "rx": "4px",
+        "fill": "rgb(19 22 43 / 0.92)",
+        "stroke": "rgb(191 210 255 / 0.28)",
+        "tones": {
+          "accent": "stroke lilac, fill rgb(106 108 246 / 0.16)",
+          "good": "stroke and title #5fd4a0, fill rgb(95 212 160 / 0.08)",
+          "bad": "stroke rgb(255 138 138 / 0.7), title #ff9d9d",
+          "muted": "stroke-dasharray 3 3"
+        }
+      },
+      "edge": {
+        "stroke": "text-3, 1px, dash 3 4",
+        "accent": "lilac-text, 1.3px"
+      },
+      "type": {
+        "title": "9.5px 600 0.06em uppercase",
+        "sub": "8.5px text-3",
+        "caption": "8px 500 0.18em uppercase text-3"
+      }
+    },
+    "projectPages": {
+      "sites": [
+        "experiment-engine",
+        "casefile",
+        "fieldnote",
+        "reelrank"
+      ],
+      "masterTheme": "/Volumes/Crucial_1TB/projects/project-sites/_theme/theme.css",
+      "masterField": "/Volumes/Crucial_1TB/projects/project-sites/_theme/field.js",
+      "note": "Copied into each site folder; edit the masters and recopy. field.js is the portfolio shader without hover lean, mask smoothstep(0.45,0.85) x 0.8, scroll calm up to 75%."
+    },
+    "moltenIllumination": {
+      "requestedBy": "user, 2026-11-25",
+      "source": [
+        "src/components/ui/Molten.tsx",
+        "src/components/ui/Molten.module.css",
+        "src/components/ScrollRail/ScrollRail.tsx",
+        "src/components/ScrollRail/ScrollRail.module.css"
+      ],
+      "heatRamp": {
+        "molten-white": "#ffe4c8",
+        "molten-glow": "#ffa071",
+        "molten-amber": "#ffb48a",
+        "molten-violet": "#b06ad8",
+        "molten-spark": "#ffc7a6",
+        "molten-mark-current": "#ffd6bd",
+        "molten-bead": "#ffe2cc"
+      },
+      "headingPour": "Molten copy of each heading word, heat-ramp gradient clipped to text, revealed top-down by clip-path as the heading rises from 92% to ~55% of the viewport; holds mid-screen; cools back to display-ink as it passes the top. Scroll-linked. No drop-shadow (it paints a dark box on text-clipped gradients).",
+      "channel": "2px lilac→ember→molten-white line with ember underglow under the heading hairline; fills left to right with the pour and stays lit.",
+      "rail": "18rem right-edge rail (≥1280px): molten gradient fill with a 6s downward current, molten-bead head; 7px diamond section marks (radius 1px) ignite ember when the molten front reaches them and stay lit; current section's mark scales up.",
+      "reducedMotion": "No pour, no current; headings plain; rail fill static.",
+      "exception": "The only sanctioned gradient text in the system; always transient."
+    },
+    "moltenLine": {
+      "requestedBy": "user, 2026-11-25",
+      "source": "src/components/Snake/Snake.tsx",
+      "marking": "data-snake=top|middle|bottom; data-snake-x=flush (default 10px short of the element); stops past 45% of the viewport are skipped",
+      "head": "62% of viewport height; draws down on scroll down, retracts on scroll up; reached stops ignite and clear",
+      "route": "name (middle) → section heading channels (flush) → role titles → institutions → left-column project cards (all cards on phones) → skills grid → certification groups → contact card",
+      "stroke": "1.6px + 7px underglow at 14%, square caps, mitred corners, vertical heat gradient reflecting every 1600px",
+      "layer": "z-index -1 after the shader canvas: over the field, behind content and panels",
+      "reducedMotion": "drawn in full, all stops lit",
+      "geometry": "straight/orthogonal: vertical trunk 18px left of the leftmost stop; a horizontal branch out to each stop and back",
+      "experienceRail": "retired; the trunk is the timeline"
+    },
+    "moltenName": {
+      "requestedBy": "user, 2026-11-25",
+      "gradient": "180deg #b9bbff → lilac → #b06ad8 → ember → #ffa071, background-size 100% 200%, first line top half, second line bottom half",
+      "note": "the only permanent gradient text"
+    },
+    "mellowedHeat": {
+      "date": "2026-11-25",
+      "name": "#c2c4f2 → #9a9be6 → #ac8ad0 → #d98f78 → #e3a58f",
+      "headingPour": "#ecd2c2 → #df9d84 → #d47e64 → #8f8fe0 at ≤85% opacity",
+      "shader": "lilac (0.40,0.41,0.82), ember (0.86,0.42,0.30), strength −~33%, 55% on narrow screens",
+      "lineAndRail": "#9496e0 → #6f71d6 → #d47e64 → #e0a993; nodes #d47e64/#e9bfa6; head #f1d6c6"
+    },
+    "phones": "Molten line hidden <720px; skills filters scroll in one row, skills in two columns; certifications as compact rows; contact card tighter, email breaks after @"
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Explore and Read the paper: lilac wash, lilac edge, ember edge on hover.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\">Explore <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14\"/><path d=\"m19 12-7 7-7-7\"/></svg></a>",
+      "css": ".ds-btn-primary{display:inline-flex;align-items:center;justify-content:space-between;gap:2.25rem;min-height:3.5rem;padding:0 1.4rem 0 1.6rem;border-radius:var(--radius,4px);background:rgb(106 108 246 / 0.26);border:1px solid var(--lilac,#6a6cf6);color:var(--text,#e4e8f7);font-family:var(--font,'Archivo',sans-serif);font-size:0.75rem;font-weight:600;letter-spacing:0.24em;text-transform:uppercase;text-decoration:none;transition:background-color 200ms cubic-bezier(0.16,1,0.3,1),border-color 200ms cubic-bezier(0.16,1,0.3,1),transform 200ms cubic-bezier(0.16,1,0.3,1)}.ds-btn-primary:hover{background:rgb(106 108 246 / 0.42);border-color:var(--ember,#ff6a3d)}.ds-btn-primary:active{transform:translateY(1px)}.ds-btn-primary:focus-visible{outline:2px solid var(--ember,#ff6a3d);outline-offset:3px}"
+    },
+    {
+      "name": "Sheet Action",
+      "kind": "button",
+      "refersTo": "sheet-action",
+      "description": "Verify credential in the certificate sheet: neutral outline, fills lilac on hover.",
+      "html": "<a class=\"ds-btn-action\" href=\"#\">Verify credential <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 7h10v10\"/><path d=\"M7 17 17 7\"/></svg></a>",
+      "css": ".ds-btn-action{--accent:var(--lilac,#6a6cf6);display:inline-flex;align-items:center;gap:0.6rem;min-height:3.25rem;padding:0 1.25rem;border:1px solid rgb(191 210 255 / 0.28);border-radius:var(--radius,4px);color:var(--text,#e4e8f7);font-family:var(--font,'Archivo',sans-serif);font-size:0.72rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;transition:background-color 200ms cubic-bezier(0.16,1,0.3,1),color 200ms cubic-bezier(0.16,1,0.3,1)}.ds-btn-action:hover{border-color:var(--accent);background:var(--accent);color:var(--void,#0b0d1a)}.ds-btn-action:focus-visible{outline:2px solid var(--ember,#ff6a3d);outline-offset:3px}"
+    },
+    {
+      "name": "Filter Pill",
+      "kind": "chip",
+      "refersTo": "pill-filter",
+      "description": "Skill illumination filter; ember only when pressed.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-pill-filter\" aria-pressed=\"true\">All</button><button class=\"ds-pill-filter\" aria-pressed=\"false\">Machine learning</button></div>",
+      "css": ".ds-filters{display:flex;flex-wrap:wrap;gap:0.5rem}.ds-pill-filter{min-height:2.5rem;padding:0 1rem;background:none;border:1px solid rgb(191 210 255 / 0.28);border-radius:999px;font-family:var(--font,'Archivo',sans-serif);font-size:0.68rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--text-2,#a9b0d0);cursor:pointer;transition:border-color 200ms cubic-bezier(0.16,1,0.3,1),color 200ms cubic-bezier(0.16,1,0.3,1)}.ds-pill-filter:hover{color:var(--text,#e4e8f7);border-color:var(--mist,#bfd2ff)}.ds-pill-filter[aria-pressed='true']{border-color:var(--ember,#ff6a3d);color:var(--ember,#ff6a3d)}.ds-pill-filter:focus-visible{outline:2px solid var(--ember,#ff6a3d);outline-offset:3px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Tracked wordmark, fading hairline, tracked links; ember dot marks the current section.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-mark\">Omkar Kulkarni</span><span class=\"ds-nav-rule\"></span><a class=\"ds-nav-link\" href=\"#\">Experience</a><a class=\"ds-nav-link\" aria-current=\"true\" href=\"#\"><span class=\"ds-nav-dot\"></span>Projects</a><a class=\"ds-nav-link\" href=\"#\">Skills</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;gap:1.6rem;height:4.5rem;font-family:var(--font,'Archivo',sans-serif)}.ds-nav-mark{font-size:0.8rem;font-weight:500;letter-spacing:0.34em;text-transform:uppercase;color:var(--text,#e4e8f7);white-space:nowrap}.ds-nav-rule{flex:1;min-width:2rem;height:1px;background:linear-gradient(90deg,rgb(191 210 255 / 0.28),rgb(191 210 255 / 0.13) 60%,transparent)}.ds-nav-link{position:relative;display:inline-flex;align-items:center;padding-block:0.6rem;font-size:0.72rem;font-weight:500;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;color:var(--text-3,#8c93b8);transition:color 200ms cubic-bezier(0.16,1,0.3,1)}.ds-nav-link:hover,.ds-nav-link[aria-current]{color:var(--text,#e4e8f7)}.ds-nav-dot{position:absolute;left:-0.75rem;width:5px;height:5px;border-radius:50%;background:var(--ember,#ff6a3d)}.ds-nav-link:focus-visible{outline:2px solid var(--ember,#ff6a3d);outline-offset:3px}"
+    },
+    {
+      "name": "Project Card",
+      "kind": "card",
+      "refersTo": "project-card",
+      "description": "Preview plate with an architecture diagram, family label, name, short summary, and two equal actions (GitHub, Website).",
+      "html": "<article class=\"ds-pcard\"><div class=\"ds-pcard-plate\"><svg viewBox=\"0 0 400 96\" class=\"ds-pv\" aria-hidden=\"true\"><defs><marker id=\"ds-h\" viewBox=\"0 0 6 6\" refX=\"5\" refY=\"3\" markerWidth=\"6\" markerHeight=\"6\" orient=\"auto\"><path d=\"M0,0 L6,3 L0,6 z\" fill=\"#8c93b8\"/></marker></defs><g class=\"ds-pv-node\"><rect x=\"14\" y=\"14\" width=\"110\" height=\"34\" rx=\"4\"/><text x=\"69\" y=\"35\" text-anchor=\"middle\" class=\"ds-pv-title\">Integrity</text></g><path class=\"ds-pv-edge\" d=\"M124,31 H150\" marker-end=\"url(#ds-h)\"/><g class=\"ds-pv-node\" data-tone=\"accent\"><rect x=\"152\" y=\"14\" width=\"110\" height=\"34\" rx=\"4\"/><text x=\"207\" y=\"35\" text-anchor=\"middle\" class=\"ds-pv-title\">Decision</text></g><path class=\"ds-pv-edge\" d=\"M262,31 H288\" marker-end=\"url(#ds-h)\"/><g class=\"ds-pv-node\" data-tone=\"good\"><rect x=\"290\" y=\"14\" width=\"96\" height=\"34\" rx=\"4\"/><text x=\"338\" y=\"35\" text-anchor=\"middle\" class=\"ds-pv-title\">Ship</text></g><text x=\"14\" y=\"78\" class=\"ds-pv-cap\">First match wins</text></svg></div><div class=\"ds-pcard-body\"><p class=\"ds-pcard-kind\">Analytics &amp; ML</p><h3 class=\"ds-pcard-title\">Experiment Decision Engine</h3><p class=\"ds-pcard-summary\">Naive peeking ran a <span class=\"ds-num\">19.4%</span> false-positive rate; Lan-DeMets boundaries held it to <span class=\"ds-num\">4.97%</span>.</p></div><div class=\"ds-pcard-actions\"><a class=\"ds-pcard-btn\" href=\"#\">GitHub</a><a class=\"ds-pcard-btn ds-pcard-primary\" href=\"#\">Website</a></div></article>",
+      "css": ".ds-pcard{--accent:var(--lilac,#6a6cf6);--accent-text:var(--lilac-text,#9a9cff);--marker:var(--lilac,#6a6cf6);display:grid;max-width:36rem;background:rgb(19 22 43 / 0.86);border:1px solid rgb(191 210 255 / 0.28);border-radius:6px;overflow:hidden;font-family:var(--font,'Archivo',sans-serif);transition:border-color 480ms cubic-bezier(0.16,1,0.3,1),box-shadow 480ms cubic-bezier(0.16,1,0.3,1)}.ds-pcard:hover,.ds-pcard:focus-within{border-color:var(--accent);box-shadow:0 24px 48px -24px rgb(0 0 0 / 0.7),0 2px 6px rgb(0 0 0 / 0.3)}.ds-pcard-plate{padding:1.25rem 1.5rem 0.75rem;background:rgb(11 13 26 / 0.6);border-bottom:1px solid rgb(191 210 255 / 0.13)}.ds-pv{display:block;width:100%;height:auto}.ds-pv-node rect{fill:rgb(19 22 43 / 0.92);stroke:rgb(191 210 255 / 0.28);stroke-width:1}.ds-pv-node[data-tone='accent'] rect{fill:rgb(106 108 246 / 0.16);stroke:#6a6cf6}.ds-pv-node[data-tone='good'] rect{fill:rgb(95 212 160 / 0.08);stroke:#5fd4a0}.ds-pv-title{fill:#e4e8f7;font-size:9.5px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase}.ds-pv-node[data-tone='good'] .ds-pv-title{fill:#5fd4a0}.ds-pv-cap{fill:#8c93b8;font-size:8px;font-weight:500;letter-spacing:0.18em;text-transform:uppercase}.ds-pv-edge{fill:none;stroke:#8c93b8;stroke-width:1;stroke-dasharray:3 4;animation:ds-flow 2.4s linear infinite}.ds-pcard:hover .ds-pv-edge{animation-duration:0.9s}@keyframes ds-flow{to{stroke-dashoffset:-14}}@media (prefers-reduced-motion:reduce){.ds-pv-edge{animation:none}}.ds-pcard-body{display:grid;gap:0.6rem;padding:1.5rem 1.5rem 0.5rem}.ds-pcard-kind{display:inline-flex;align-items:center;gap:0.55rem;margin:0;font-size:0.68rem;font-weight:500;letter-spacing:0.24em;text-transform:uppercase;color:#8c93b8;transition:color 200ms}.ds-pcard-kind::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--marker);transition:background-color 200ms}.ds-pcard:hover .ds-pcard-kind{color:var(--accent-text)}.ds-pcard:hover .ds-pcard-kind::before{background:var(--accent)}.ds-pcard-title{margin:0;font-size:1rem;font-weight:550;letter-spacing:0.16em;line-height:1.45;text-transform:uppercase;color:#e4e8f7}.ds-pcard-summary{margin:0;font-size:0.98rem;line-height:1.65;color:#a9b0d0;max-width:60ch}.ds-num{color:#9a9cff;font-weight:650;font-variant-numeric:tabular-nums;white-space:nowrap}.ds-pcard-actions{display:grid;grid-template-columns:1fr 1fr;gap:0.6rem;padding:1.25rem 1.5rem 1.5rem}.ds-pcard-btn{display:inline-flex;align-items:center;justify-content:center;min-height:3rem;padding:0 1rem;border:1px solid rgb(191 210 255 / 0.28);border-radius:4px;font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;text-decoration:none;color:#e4e8f7;transition:background-color 200ms,border-color 200ms,color 200ms}.ds-pcard-btn:hover{border-color:var(--accent);color:var(--accent-text)}.ds-pcard-primary{background:rgb(106 108 246 / 0.26);border-color:#6a6cf6}.ds-pcard-primary:hover{background:rgb(106 108 246 / 0.42);border-color:var(--accent);color:#e4e8f7}.ds-pcard-btn:focus-visible{outline:2px solid #ff6a3d;outline-offset:3px;border-radius:2px}"
+    },
+    {
+      "name": "Credential Tile",
+      "kind": "card",
+      "refersTo": "credential-tile",
+      "description": "Transparent hairline tile that flips to its certificate on hover or focus.",
+      "html": "<button class=\"ds-cred\"><span class=\"ds-cred-inner\"><span class=\"ds-cred-front\"><span class=\"ds-cred-name\">Machine Learning Specialization</span><span class=\"ds-cred-foot\"><span class=\"ds-cred-meta\">Coursera</span><span class=\"ds-cred-meta\">2024</span></span></span><span class=\"ds-cred-back\">Certificate</span></span></button>",
+      "css": ".ds-cred{display:block;width:16rem;aspect-ratio:16/10;perspective:1000px;padding:0;background:none;border:0;text-align:left;font-family:var(--font,'Archivo',sans-serif);cursor:pointer}.ds-cred-inner{position:relative;display:block;width:100%;height:100%;transform-style:preserve-3d;transition:transform 800ms cubic-bezier(0.16,1,0.3,1)}.ds-cred:hover .ds-cred-inner,.ds-cred:focus-visible .ds-cred-inner{transform:rotateY(180deg)}.ds-cred-front,.ds-cred-back{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:6px;overflow:hidden}.ds-cred-front{display:grid;grid-template-rows:1fr auto;gap:0.75rem;padding:1.1rem 1.15rem;background:transparent;border:1px solid rgb(191 210 255 / 0.28);transition:border-color 480ms}.ds-cred:hover .ds-cred-front{border-color:var(--lilac,#6a6cf6)}.ds-cred-name{font-size:1.05rem;font-weight:550;line-height:1.3;color:var(--text,#e4e8f7)}.ds-cred-foot{display:flex;gap:0.9rem;padding-top:0.7rem;border-top:1px solid rgb(191 210 255 / 0.13)}.ds-cred-meta{font-size:0.66rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:var(--lilac-text,#9a9cff)}.ds-cred-back{transform:rotateY(180deg);display:grid;place-items:center;background:#f4f5fb;color:#13162b;border:1px solid rgb(191 210 255 / 0.28);font-size:0.8rem}.ds-cred:focus-visible{outline:2px solid var(--ember,#ff6a3d);outline-offset:4px}"
+    },
+    {
+      "name": "In-progress Tag",
+      "kind": "chip",
+      "refersTo": "tag-in-progress",
+      "description": "Dashed lilac pill marking current roles and studies in the ruled credit line.",
+      "html": "<p class=\"ds-credit\"><span>Aug 2026 to Jul 2027</span><span>West Lafayette, Indiana</span><span class=\"ds-now\">In progress</span></p>",
+      "css": ".ds-credit{display:flex;flex-wrap:wrap;align-items:center;gap:0.4rem 1.25rem;margin:0;padding-top:0.85rem;border-top:1px solid rgb(191 210 255 / 0.13);font-family:var(--font,'Archivo',sans-serif);font-size:0.875rem;color:var(--text-2,#a9b0d0)}.ds-now{padding:0.2rem 0.55rem;border:1px dashed var(--lilac-text,#9a9cff);border-radius:999px;font-size:0.62rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:var(--lilac-text,#9a9cff)}"
+    },
+    {
+      "name": "Sheet Control",
+      "kind": "button",
+      "refersTo": "sheet-control",
+      "description": "Pill controls in the sheet bar; ember on hover, Close fills ember.",
+      "html": "<div class=\"ds-ctrls\"><button class=\"ds-ctrl\" aria-label=\"Previous\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m12 19-7-7 7-7\"/><path d=\"M19 12H5\"/></svg></button><button class=\"ds-ctrl\" aria-label=\"Next\"><svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14\"/><path d=\"m12 5 7 7-7 7\"/></svg></button><button class=\"ds-ctrl ds-ctrl-close\">Close <svg width=\"15\" height=\"15\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" aria-hidden=\"true\"><path d=\"M18 6 6 18\"/><path d=\"m6 6 12 12\"/></svg></button></div>",
+      "css": ".ds-ctrls{display:flex;gap:0.5rem}.ds-ctrl{display:inline-grid;grid-auto-flow:column;place-items:center;gap:0.45rem;min-width:2.75rem;height:2.75rem;padding:0 0.8rem;background:none;border:1px solid rgb(191 210 255 / 0.28);border-radius:999px;color:var(--text,#e4e8f7);font-family:var(--font,'Archivo',sans-serif);font-size:0.68rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;cursor:pointer;transition:border-color 200ms cubic-bezier(0.16,1,0.3,1),color 200ms cubic-bezier(0.16,1,0.3,1)}.ds-ctrl:hover{border-color:var(--ember,#ff6a3d);color:var(--ember,#ff6a3d)}.ds-ctrl-close{border-color:var(--mist,#bfd2ff)}.ds-ctrl-close:hover{background:var(--ember,#ff6a3d);border-color:var(--ember,#ff6a3d);color:var(--void,#0b0d1a)}.ds-ctrl:focus-visible{outline:2px solid var(--ember,#ff6a3d);outline-offset:3px}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Shader Studio",
+    "overview": "The page is a studio portal. A single full-screen WebGL field, silk ribbons of fine strands running lilac into ember over a deep void, is the ground of everything; the work floats over it as thin, condensed, uppercase display type, small tracked labels, plain sentence-case body, and a few solid ink panels edged in 1px mist hairlines. The identity is carried by the moving surface and the huge condensed type, with very little else on screen. This world replaced an earlier periodic-table world that the owner rejected as cluttered, so restraint is the operating principle: sleek and clean beats dense and decorated.\n\nDensity is low and the rhythm is generous: sections are separated by a fluid 6 to 11rem band, content sits in a 1480px measure, and the left of the field is kept near-void so type always reads on quiet ground. Interaction is where the richness lives: the field leans toward a hovered project's hue, project cards tilt and their architecture diagrams flow faster, skill groups illuminate while the rest dim, credentials flip to their certificate and open into a full-screen sheet through a circular clip-path, arrows page through that sheet, and the whole page scrolls with inertia. Every one of these is kept by the owner's instruction, and every one has a calm fallback.\n\nConfirmed rejections: no glass blur, no glow halos, no monospace, no gradients on text, and nothing from the previous site's look (JetBrains Mono, blueprint console, cyan). No headline numbers anywhere: figures live inside sentences, tinted, never enlarged.\n\n### Project page family\nThe four GitHub Pages project sites (Experiment Decision Engine, ReelRank, Fieldnote, Casefile) are the same system in long-form: void ground, the same ribbon field, Archivo condensed display in display-ink, tracked labels, lilac as the accent, ember only on hover, and the same diagram vocabulary with mint and soft red as outcome tones. Their look lives in two master files, `/Volumes/Crucial_1TB/projects/project-sites/_theme/theme.css` (tokens and components) and `/Volumes/Crucial_1TB/projects/project-sites/_theme/field.js` (the shader, with no hover lean, its quiet mask moved further right, and a calmer scroll falloff), copied into each site folder. Edit the masters and recopy; a change to this file's tokens should be mirrored there.",
+    "keyCharacteristics": [
+      "One living shader field as the ground of the whole page; panels float over it, never replace it.",
+      "Archivo variable at condensed width (wdth 64), light weight (350), uppercase, for every display line.",
+      "Small uppercase labels tracked wide (0.16 to 0.34em) as the second voice; body stays plain sentence case.",
+      "Lilac is the voice of the system; ember appears in the interface only when something is hovered, pressed, current, or focused, with the Resume outline as the one exception.",
+      "Solid ink panels with 1px mist hairlines; depth is offset shadow on hover only.",
+      "Motion everywhere, all of it dropped or frozen under reduced motion."
+    ],
+    "rules": [
+      {
+        "name": "The Ember Rule",
+        "body": "Ember in the interface marks a state, never a resting surface: hover, pressed, current, focus. At rest, chrome is mist, dusk, starlight or lilac. Project families carry two colours: a resting marker that is never ember (lilac for analytics, mist for AI engineering) and an accent (lilac or ember) used only on hover and active states. The shader's ribbons and the per-project flow-line fallback drawings are world materials and keep their family hue. The single sanctioned resting-ember element is the Resume outline (header pill and hero action), because the resume is the primary exit; it sets no pattern for any other button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Tinted Numeral Rule",
+        "body": "Every figure in running text is set in lilac-text at weight 650 with tabular numerals, in place, at the size of its sentence. A number is never promoted to its own line, its own size, or its own card.",
+        "section": "colors"
+      },
+      {
+        "name": "The True Photo Rule",
+        "body": "A real photograph is dimmed and washed into the palette before it is placed; it never outshines the display type.",
+        "section": "colors"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Separation is a 1px mist line (line for dividers inside content, line-strong for the edges of panels, tiles and pills). No filled dividers, no thick rules.",
+        "section": "colors"
+      },
+      {
+        "name": "The Condensed Display Rule",
+        "body": "Display lines are Archivo at wdth 64, weight 350, uppercase, letter-spacing -0.01em, line-height 0.88 to 0.9. Never bold, never at normal width, never with a gradient fill.",
+        "section": "typography"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Uppercase belongs to display lines and tracked labels. Body copy and summaries stay sentence case at normal tracking.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat-At-Rest Rule",
+        "body": "Nothing casts a shadow at rest. Lift appears only as a response to hover or focus, and it is black, never tinted.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Solid Panel Rule",
+        "body": "Panels are ink at 86% or solid void. No backdrop-filter, no frosted glass, no coloured halo behind a surface.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do keep the shader field as the ground of every surface, with the left of the viewport near-void behind type.",
+      "Do set display lines in Archivo at wdth 64, weight 350, uppercase, line-height 0.88 to 0.9, revealed by a masked rise (y 110% to 0, 1s, ease-out, 0.07s word stagger).",
+      "Do run every figure in a sentence through the inline-numeral treatment: lilac-text, weight 650, tabular, at the sentence's size.",
+      "Do keep ember for hover, pressed, current and focus in chrome and type; at rest use mist, dusk, starlight or lilac.",
+      "Do float content on ink at 86% with a 1px line-strong edge, and reach for Lift only on hover or focus.",
+      "Do design the unlit state: dim to 32% and keep it readable rather than hiding it.",
+      "Do grade real photographs into the palette (dimmed, slightly desaturated, under a lilac-to-void multiply wash) so the display type leads the fold.",
+      "Do keep a project card to its diagram, name, a one or two sentence summary, and two actions (GitHub, Website).",
+      "Do mark in-progress items with a dashed 1px lilac-text pill, and pair every colour signal with text or shape.",
+      "Do use the shared easing (cubic-bezier(0.16, 1, 0.3, 1)) at 200ms for colour and border changes and 480ms for layout, opacity and shadow.",
+      "Do give every motion a calm path: under reduced motion or still mode, the field freezes, diagram edges stop, inertial scroll is skipped, entrances are dropped and the sheet fades in 0.15s."
+    ],
+    "donts": [
+      "Don't feature a big headline number for any project, role or credential; numbers stay inside sentences, tinted, never enlarged.",
+      "Don't put ember on a resting button, border, label or icon; the Resume outline is the one exception, and family markers at rest are lilac or mist.",
+      "Don't use outcome mint or outcome red outside a diagram node.",
+      "Don't use backdrop blur, frosted glass, glow halos or coloured shadows.",
+      "Don't use a monospace face, or the previous site's blueprint console look and cyan accent.",
+      "Don't fill text with a gradient.",
+      "Don't add a busy grid of tiles, a grid background, or more panels than the content needs; the identity is the field and the type, not containers.",
+      "Don't set body copy in uppercase or tracked wide; that voice belongs to labels."
+    ]
+  }
+}

@@ -1,0 +1,106 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 40;
+  transition: background-color var(--dur) var(--ease-out), border-color var(--dur) var(--ease-out);
+  border-bottom: 1px solid transparent;
+}
+.header[data-scrolled] {
+  background: var(--void);
+  border-bottom-color: var(--line);
+}
+
+.inner {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  height: 4.5rem;
+}
+
+.mark {
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.34em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text);
+  white-space: nowrap;
+}
+
+/* The board's long hairline between wordmark and nav */
+.rule {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, var(--line-strong), var(--line) 60%, transparent);
+  min-width: 2rem;
+}
+
+.nav {
+  display: none;
+  gap: 1.6rem;
+}
+.link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--text-3);
+  padding-block: 0.6rem;
+  transition: color var(--dur-fast) var(--ease-out);
+}
+.link:hover,
+.link[aria-current] {
+  color: var(--text);
+}
+.dot {
+  position: absolute;
+  left: -0.75rem;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--ember);
+}
+
+.resume {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  height: 2.5rem;
+  padding: 0 1.1rem;
+  border: 1px solid var(--ember);
+  border-radius: 999px;
+  color: var(--ember);
+  font-size: var(--fs-label);
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.resume:hover {
+  background: var(--ember);
+  color: var(--void);
+}
+
+@media (min-width: 1100px) {
+  .nav {
+    display: flex;
+  }
+}
+@media (max-width: 520px) {
+  .mark {
+    letter-spacing: 0.22em;
+    font-size: 0.72rem;
+  }
+  .rule {
+    display: none;
+  }
+  .inner {
+    justify-content: space-between;
+  }
+}

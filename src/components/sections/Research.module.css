@@ -1,0 +1,106 @@
+.section {
+  padding-bottom: var(--section);
+}
+.grid {
+  display: grid;
+  gap: 2.5rem;
+}
+
+.paper {
+  display: grid;
+  align-content: start;
+  gap: 1.1rem;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 6px;
+}
+.paperTitle {
+  font-size: clamp(1.5rem, 2.4vw, 2.1rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  color: var(--text);
+}
+.summary {
+  line-height: 1.65;
+  color: var(--text-2);
+}
+.authors {
+  font-size: var(--fs-small);
+  color: var(--text-3);
+}
+.read {
+  justify-self: start;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-height: 3rem;
+  margin-top: 0.5rem;
+  padding: 0 1.25rem;
+  border: 1px solid var(--lilac);
+  background: rgb(106 108 246 / 0.26);
+  border-radius: var(--radius);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color var(--dur-fast) var(--ease-out), border-color var(--dur-fast) var(--ease-out);
+}
+.read:hover {
+  background: rgb(106 108 246 / 0.42);
+  border-color: var(--ember);
+}
+
+.schools {
+  display: grid;
+  align-content: start;
+}
+.school {
+  display: grid;
+  gap: 0.55rem;
+  padding: 1.5rem 0;
+}
+.school:first-child {
+  padding-top: 0;
+}
+.school + .school {
+  border-top: 1px solid var(--line);
+}
+.credit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.25rem;
+  margin-top: 0.35rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+  font-size: var(--fs-small);
+  color: var(--text-2);
+}
+.now {
+  padding: 0.25rem 0.55rem;
+  border: 1px dashed var(--lilac-text);
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lilac-text);
+}
+.inst {
+  font-size: clamp(2rem, 3.4vw, 3rem);
+  color: var(--text);
+}
+.degree {
+  color: var(--text);
+}
+
+
+@media (min-width: 980px) {
+  .grid {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+    gap: 4rem;
+  }
+}

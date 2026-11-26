@@ -1,0 +1,23 @@
+/* Molten light poured into a heading's letters (transient: it cools back to plain type) */
+.molten {
+  position: absolute;
+  inset: 0;
+  color: transparent;
+  background: linear-gradient(180deg, #ecd2c2 0%, #df9d84 28%, #d47e64 52%, #8f8fe0 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  pointer-events: none;
+}
+
+/* The channel under a heading: lilac running into ember, with a hot leading edge */
+.channel {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 2px;
+  height: 1.5px;
+  background: linear-gradient(90deg, #8587e0, #d47e64 85%, #e9bfa6);
+  box-shadow: 0 1px 6px -2px rgb(212 126 100 / 0.45);
+  pointer-events: none;
+}

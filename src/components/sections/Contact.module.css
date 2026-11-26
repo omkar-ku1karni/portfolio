@@ -1,0 +1,146 @@
+.section {
+  padding-top: calc(var(--section) * 0.6);
+}
+.card {
+  display: grid;
+  gap: 0;
+  margin-bottom: var(--section);
+  padding: clamp(1.75rem, 5vw, 4.5rem);
+  background: var(--panel);
+  border: 1px solid var(--line-strong);
+  border-radius: 8px;
+}
+.where {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: 2rem;
+  font-size: var(--fs-label);
+  font-weight: 500;
+  letter-spacing: var(--track-label);
+  text-transform: uppercase;
+  color: var(--text-2);
+}
+.pulse {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--lilac);
+}
+.heading {
+  font-size: clamp(3.5rem, 9vw, 8.5rem);
+  color: #cfd3f6;
+}
+.mask {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: top;
+  padding: 0.08em 0.06em 0.1em;
+  margin: -0.08em -0.06em -0.1em;
+}
+.word {
+  position: relative;
+  display: inline-block;
+}
+.sub {
+  margin-top: 1.25rem;
+  color: var(--text-2);
+}
+
+.links {
+  display: grid;
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  border-top: 1px solid var(--line);
+}
+.link {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.15rem 0.5rem 1.15rem 0;
+  border-bottom: 1px solid var(--line);
+  text-decoration: none;
+  transition: padding var(--dur) var(--ease-out), background-color var(--dur) var(--ease-out);
+}
+.link:hover,
+.link:focus-visible {
+  padding-left: 1rem;
+  background: var(--panel);
+}
+.icon {
+  display: grid;
+  place-items: center;
+  width: 2.75rem;
+  height: 2.75rem;
+  border: 1px solid var(--line-strong);
+  border-radius: 50%;
+  color: var(--text);
+  transition: border-color var(--dur-fast) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.link:hover .icon {
+  border-color: var(--ember);
+  color: var(--ember);
+}
+.text {
+  display: grid;
+  gap: 0.15rem;
+  min-width: 0;
+}
+.label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+.value {
+  font-size: var(--fs-small);
+  color: var(--text-2);
+  overflow-wrap: anywhere;
+}
+.arrow {
+  color: var(--text-3);
+  transition: transform var(--dur) var(--ease-out), color var(--dur-fast) var(--ease-out);
+}
+.link:hover .arrow {
+  color: var(--ember);
+  transform: translate(3px, -3px);
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding-block: 1.75rem 2.25rem;
+  border-top: 1px solid var(--line);
+}
+.footer a {
+  text-decoration: none;
+}
+.footer a:hover {
+  color: var(--text);
+}
+
+@media (min-width: 980px) {
+  .links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    column-gap: 3rem;
+  }
+}
+
+/* Phones: tighter card so the email address fits on one line */
+@media (max-width: 719px) {
+  .card {
+    padding: 1.5rem 1.25rem;
+  }
+  .link {
+    gap: 0.9rem;
+  }
+  .icon {
+    width: 2.4rem;
+    height: 2.4rem;
+  }
+  .value {
+    overflow-wrap: break-word;
+  }
+}

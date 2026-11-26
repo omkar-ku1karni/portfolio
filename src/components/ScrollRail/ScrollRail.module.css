@@ -1,0 +1,101 @@
+.rail {
+  position: fixed;
+  right: clamp(1rem, 1.6vw, 1.75rem);
+  top: 50%;
+  z-index: 30;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.9rem;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+.top,
+.bottom {
+  font-size: 0.6rem;
+  font-weight: 500;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-3);
+  writing-mode: vertical-rl;
+}
+.bottom {
+  color: var(--text);
+}
+
+.track {
+  position: relative;
+  width: 1px;
+  height: 18rem;
+  background: var(--line-strong);
+}
+
+/* Molten light filling the channel, with a slow current flowing down inside it */
+.fill {
+  position: absolute;
+  inset: 0 -1px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, #7577d8, #a385c8 35%, #d47e64 70%, #e0a993, #7577d8);
+  background-size: 100% 240%;
+  animation: current 6s linear infinite;
+  box-shadow: 0 0 5px rgb(212 126 100 / 0.3);
+}
+@keyframes current {
+  from { background-position: 0 0; }
+  to { background-position: 0 240%; }
+}
+
+/* Section marks: dark until the molten front reaches them, then they ignite and stay lit */
+.mark {
+  position: absolute;
+  left: 50%;
+  width: 7px;
+  height: 7px;
+  margin: -3.5px 0 0 -3.5px;
+  border: 1px solid var(--line-strong);
+  border-radius: 1px;
+  background: var(--void);
+  transform: rotate(45deg) scale(0.85);
+  transition:
+    background-color 500ms var(--ease-out),
+    border-color 500ms var(--ease-out),
+    box-shadow 700ms var(--ease-out),
+    transform 500ms var(--ease-out);
+}
+.mark[data-lit] {
+  background: #d47e64;
+  border-color: #e9bfa6;
+  box-shadow: 0 0 8px rgb(212 126 100 / 0.45);
+  transform: rotate(45deg) scale(1);
+}
+.mark[data-current] {
+  transform: rotate(45deg) scale(1.35);
+  background: #ecc8b4;
+}
+
+/* The molten head: a hot bead at the leading edge */
+.knob {
+  position: absolute;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  margin: -4.5px 0 0 -4.5px;
+  border-radius: 50%;
+  background: #f1d6c6;
+  box-shadow: 0 0 0 2px rgb(212 126 100 / 0.45), 0 0 10px 2px rgb(212 126 100 / 0.35);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fill {
+    animation: none;
+  }
+}
+:global(:root[data-still]) .fill {
+  animation: none;
+}
+
+@media (min-width: 1280px) {
+  .rail {
+    display: flex;
+  }
+}

@@ -1,0 +1,92 @@
+.section {
+  padding-bottom: var(--section);
+}
+.list {
+  position: relative;
+}
+.roles {
+  display: grid;
+}
+.role {
+  display: grid;
+  gap: 1.5rem 4rem;
+  padding: clamp(2rem, 4vw, 3rem) 0;
+}
+.role + .role {
+  border-top: 1px solid var(--line);
+}
+.role:first-child {
+  padding-top: 0;
+}
+
+.side {
+  display: grid;
+  gap: 0.6rem;
+  align-content: start;
+}
+.title {
+  font-size: clamp(2.2rem, 3.6vw, 3.25rem);
+  color: var(--text);
+}
+.company {
+  font-size: 0.78rem;
+  font-weight: 550;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--lilac-text);
+}
+/* Ruled credit line at the foot of each entry */
+.credit {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.25rem;
+  margin-top: 0.75rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+  font-size: var(--fs-small);
+  color: var(--text-2);
+}
+/* In-progress items wear a dashed outline */
+.now {
+  padding: 0.2rem 0.55rem;
+  border: 1px dashed var(--lilac-text);
+  border-radius: 999px;
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--lilac-text);
+}
+
+.points {
+  display: grid;
+  gap: 1rem;
+  max-width: 68ch;
+}
+.points li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.65;
+  color: var(--text-2);
+}
+.points li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.72em;
+  width: 0.7rem;
+  height: 1px;
+  background: var(--lilac);
+}
+
+@media (min-width: 980px) {
+  .role {
+    grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  }
+  .side {
+    position: sticky;
+    top: 6.5rem;
+    align-self: start;
+  }
+}

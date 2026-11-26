@@ -1,0 +1,59 @@
+/*
+ * Design tokens. Change colours, type and spacing here; components read
+ * these variables, so one edit restyles the whole site.
+ */
+:root {
+  /* Ground: a deep void the shader field paints over */
+  --void: #0b0d1a;
+  --ink: #13162b;
+  --night: #1a1d3a;
+
+  /* Type colours (all pass WCAG AA on --void and --ink) */
+  --text: #e4e8f7;
+  --text-2: #a9b0d0;
+  --text-3: #8c93b8;
+  --mist: #bfd2ff;
+
+  /* Accents: lilac is the primary, ember marks what is active */
+  --lilac: #6a6cf6;
+  --lilac-text: #9a9cff;
+  --ember: #ff6a3d;
+
+  /* Hairlines */
+  --line: rgb(191 210 255 / 0.13);
+  --line-strong: rgb(191 210 255 / 0.28);
+
+  /* Panels float over the field: solid ink, never blurred glass */
+  --panel: rgb(19 22 43 / 0.86);
+  --panel-solid: var(--ink);
+
+  /* Type */
+  --font: 'Archivo Variable', 'Archivo', 'Helvetica Neue', Arial, sans-serif;
+  --display-stretch: 64%;
+  --fs-hero: clamp(4.25rem, 10.5vw, 9.5rem);
+  --fs-h2: clamp(3rem, 7vw, 6.25rem);
+  --fs-h3: clamp(1.35rem, 2vw, 1.75rem);
+  --fs-body: 1.0625rem;
+  --fs-small: 0.875rem;
+  --fs-label: 0.72rem;
+  --track-label: 0.24em;
+
+  /* Space */
+  --gutter: clamp(1.25rem, 4vw, 4.5rem);
+  --section: clamp(6rem, 13vw, 11rem);
+  --max: 1480px;
+  --radius: 4px;
+
+  /* Depth: offset + blur, never a coloured halo */
+  --lift: 0 24px 48px -24px rgb(0 0 0 / 0.7), 0 2px 6px rgb(0 0 0 / 0.3);
+
+  /* Motion */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 200ms;
+  --dur: 480ms;
+}
+
+/* Family accents for project-level colour */
+[data-family='analytics'] { --accent: var(--lilac); --accent-text: var(--lilac-text); --marker: var(--lilac); }
+[data-family='ai'] { --accent: var(--ember); --accent-text: var(--ember); --marker: var(--mist); }
+/* --accent is for hover/active only; --marker is the resting family colour (never ember). */
